@@ -175,8 +175,14 @@ const NavMenu = styled.div`
       }
     }
   }
-  /* @media (max-width: 768px) {
-    display: none;
-  } */
+  @media (max-width: 768px) {
+    display: flex;
+    position:relative;
+    white-space:nowrap;
+    overflow-x: auto;
+    justify-content:flex-start;
+    margin-right: auto;
+  margin-left: auto;
+  }
 `;
 export default Header
