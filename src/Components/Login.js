@@ -21,7 +21,7 @@ function Login() {
         }else{
             setData('Listen to Radio Dhermi')
             setDis('none')
-            setBack('/images/drymades.jpg')
+            setBack('/images/dhermi.png')
             setLogo('')
 
         }
@@ -32,7 +32,7 @@ function Login() {
        <Container>
            <Content>
                <CTO>
-               <CTOGif style={{display:`${dis}`}} src="/images/gif1.gif" alt=""/>
+               <CTOGif style={{display:`${dis}`}} src="/images/4Cb2.gif" alt=""/>
                 <CTOLogo style={{display:`${logo}`}}  src="/images/logo.png" alt=""/>
 
                    <Button  onClick={()=>{
@@ -131,7 +131,7 @@ font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 18px;
   padding: 16.5px 0;
-  border: 1px solid transparent;
+  border: transparent;
   border-radius: 4px;
   &:hover {
     background-color: white;

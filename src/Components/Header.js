@@ -17,7 +17,7 @@ function Header() {
     const rain='https://www.youtube.com/watch?v=R0NME9W3cR4&t=80s&ab_channel=NatureSFX'
     const ocean='https://www.youtube.com/watch?v=vPhg6sc1Mk4&ab_channel=NaturalezaViva-SonidosyPaisajesIncre%C3%ADbles'
     const river='https://www.youtube.com/watch?v=IvjMgVS6kng&t=8s&ab_channel=TheSilentWatcher'
-    const fire='https://www.youtube.com/watch?v=Ftm2uv7-Ybw&t=961s&ab_channel=TheSilentWatcher'
+    const hits = 'https://www.youtube.com/watch?v=o2ASc0qPK8M&ab_channel=BestofMix'
     return (
         
             <Nav>
@@ -33,6 +33,12 @@ function Header() {
                         item:deep})
                     }}>
                       <span>Deep House</span>
+                    </a>
+                    <a onClick={()=>{
+                        dispatch({ type:'ADD_TO_BASKET',
+                        item:hits})
+                    }}>
+                      <span>Hits</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
@@ -100,12 +106,6 @@ function Header() {
                         item:river})
                     }}>
                       <span>River</span>
-                    </a>
-                    <a onClick={()=>{
-                        dispatch({ type:'ADD_TO_BASKET',
-                        item:fire})
-                    }}>
-                      <span>Fireplace</span>
                     </a>
                   </NavMenu>
                
