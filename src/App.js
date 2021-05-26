@@ -17,7 +17,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      </StateProvider>,
+      </StateProvider>
 
     </div>
   );

@@ -21,7 +21,7 @@ function Login() {
         }else{
             setData('Listen to Radio Dhermi')
             setDis('none')
-            setBack('/images/dhermi.png')
+            setBack('/images/drymades.jpg')
             setLogo('')
 
         }
@@ -107,23 +107,10 @@ min-height:1px;
 display:block;
 width:100%;
 `
-const But = styled.button`
-font-weight:bold;
-color:wheat;
-background-color: black;
-margin-bottom:12px;
-width:100%;
-letter-spacing:1.5px;
-font-size:15px;
-padding:16.5px 0;
-border:1px solid transparent;
-border-radius:4px;
-&:hover{
-background-color:#615c5c;
-}
-`
+
 const Button = styled.button`
 font-weight: bold;
+cursor: pointer;
   color: #f9f9f9;
   background-color: black;
   margin-bottom: 12px;

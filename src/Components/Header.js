@@ -128,6 +128,8 @@ const Nav = styled.nav`
   z-index: 3;
 `;
 const NavMenu = styled.div`
+  cursor: pointer;
+
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
