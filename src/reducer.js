@@ -2,7 +2,7 @@
 
 export const initialState = {
     basket: ['https://www.youtube.com/watch?v=36YnV9STBqc&ab_channel=TheGoodLifeRadioxSensualMusique'],
-    
+    gif:"/images/chill1.gif",
   };
   
   // Selector
@@ -14,6 +14,7 @@ export const initialState = {
         return {
           ...state,
           basket:action.item,
+          gif:action.anime,
         };
        
       default:

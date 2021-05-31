@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player/lazy';
 import { useStateValue } from "../StateProvider";
 
 function Login() {
-    const [{ basket}, dispatch] = useStateValue();
+    const [{ basket,gif}, dispatch] = useStateValue();
 
    const [state, setstate] = useState(false)
    const [data, setData] = useState('Listen to Radio Dhermi')
@@ -32,7 +32,7 @@ function Login() {
        <Container>
            <Content>
                <CTO>
-               <CTOGif style={{display:`${dis}`}} src="/images/4Cb2.gif" alt=""/>
+               <CTOGif style={{display:`${dis}`}} src={gif} alt=""/>
                 <CTOLogo style={{display:`${logo}`}}  src="/images/logo.png" alt=""/>
 
                    <Button  onClick={()=>{

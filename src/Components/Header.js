@@ -18,92 +18,118 @@ function Header() {
     const ocean='https://www.youtube.com/watch?v=vPhg6sc1Mk4&ab_channel=NaturalezaViva-SonidosyPaisajesIncre%C3%ADbles'
     const river='https://www.youtube.com/watch?v=IvjMgVS6kng&t=8s&ab_channel=TheSilentWatcher'
     const hits = 'https://www.youtube.com/watch?v=o2ASc0qPK8M&ab_channel=BestofMix'
+    const oriental= 'https://www.youtube.com/watch?v=niv4jMBX6yA'
     return (
         
             <Nav>
                   <NavMenu>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:chill})
+                        item:chill,
+                        anime:"/images/chill1.gif"})
                     }}>
                       <span>Lounge Chillout </span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:deep})
+                        item:deep,
+                        anime:"/images/deep.gif"})
                     }}>
                       <span>Deep House</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:hits})
+                        item:hits,
+                        anime:"/images/hit1.gif"})
                     }}>
                       <span>Hits</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:tropical})
+                        item:tropical,
+                        anime:"/images/giphy.gif",
+                      })
                     }}>
                       <span>Tropical</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:rock})
+                        item:rock,
+                        anime:"/images/rock1.gif"
+                      })
                     }}>
                       <span>Rock</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:alternative})
+                        item:alternative,
+                        anime:"/images/rock.gif"})
                     }}>
                       <span>Alternative</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:Reggaeton})
+                        item:Reggaeton,
+                        anime:"/images/rega.gif"})
                     }}>
                       <span>Reggaeton</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:jazz})
+                        item:oriental,
+                        anime:"/images/oriental.gif"
+                      })
                     }}>
-                      <span>Relaxing Jazz Piano</span>
+                      <span>Oriental</span>
+                    </a>
+                  
+                    <a onClick={()=>{
+                        dispatch({ type:'ADD_TO_BASKET',
+                        item:jazz,
+                        anime:"/images/jazz.gif"})
+                    }}>
+                      <span>Relaxing Jazz</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:trans})
+                        item:trans,
+                        anime:"/images/trance.gif"})
                     }}>
                       <span>Trance</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:classic})
+                        item:classic,
+                        anime:"/images/clasic.gif"})
                     }}>
                       <span>Classical Instrumental</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:meditation})
+                        item:meditation,
+                        anime:"/images/meditation.gif"})
                     }}>
                       <span>Meditation</span>
                     </a>
                   
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:rain})
+                        item:rain,
+                        anime:"/images/rain.gif"})
                     }}>
                       <span>Rain</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:ocean})
+                        item:ocean,
+                        anime:"/images/ocean.gif"})
                     }}>
                       <span>Ocean</span>
                     </a>
                     <a onClick={()=>{
                         dispatch({ type:'ADD_TO_BASKET',
-                        item:river})
+                        item:river,
+                        anime:"/images/river.gif"})
                     }}>
                       <span>River</span>
                     </a>
