@@ -53,7 +53,7 @@ function Login() {
           </Button>
           <ReactPlayer
             playing={state}
-            style={{ display: "none" }}
+            style={{ display: !kusht ? "none" : "block" }}
             url={basket}
           />
         </CTO>
