@@ -53,8 +53,7 @@ function Login() {
           </Button>
           <ReactPlayer
             playing={state}
-            kusht
-            style={{ display: !kusht ? "none" : "block" }}
+            style={{ display: "none" }}
             url={basket}
           />
         </CTO>
@@ -117,7 +116,6 @@ const CTOLogo = styled.img`
 const CTOGif = styled.img`
   margin-bottom: 12px;
   max-width: 600px;
-  min-height: 1px;
   display: block;
   width: 100%;
 `;
@@ -129,6 +127,7 @@ const Button = styled.button`
   background-color: black;
   margin-bottom: 12px;
   width: 100%;
+
   letter-spacing: 1.5px;
   font-size: 18px;
   padding: 16.5px 0;

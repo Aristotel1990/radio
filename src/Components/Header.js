@@ -5,34 +5,33 @@ import { useStateValue } from "../StateProvider";
 function Header() {
   const [{ basket }, dispatch] = useStateValue();
   const chill =
-    "https://www.youtube.com/watch?v=36YnV9STBqc&ab_channel=TheGoodLifeRadioxSensualMusique";
+    "https://www.youtube.com/watch?v=3x3PK8qdH1w&ab_channel=NonstopMusic";
   const deep =
-    "https://www.youtube.com/watch?v=WsDyRAPFBC8&ab_channel=MonstercatSilk";
-  const rock = "https://www.youtube.com/watch?v=U2wfGCojp3w&ab_channel=RGN";
+    "https://www.youtube.com/watch?v=als7xoyNyoE&ab_channel=Gentleman";
+  const rock =
+    "https://www.youtube.com/watch?v=ZcjdJ-qvbUM&ab_channel=AlternativeRockMusic90%27s";
   const Reggaeton =
-    "https://www.youtube.com/watch?v=TL-fkiYXj2Q&ab_channel=MusicaBachata";
+    "https://www.youtube.com/watch?v=h2ssrWHh4SE&ab_channel=LewisBennett";
   const trans =
     "https://www.youtube.com/watch?v=WYetg3AuLE4&ab_channel=RazNitzanMusic";
   const classic =
     "https://www.youtube.com/watch?v=2gO1v2GPMFk&ab_channel=ILoveYouVenice";
   const meditation =
-    "https://www.youtube.com/watch?v=g44sfv5KGwo&ab_channel=YellowBrickCinema-RelaxingMusic";
+    "https://www.youtube.com/watch?v=tNkZsRW7h2c&ab_channel=RelaxationAmbientMusic";
   const jazz =
     "https://www.youtube.com/watch?v=Dx5qFachd3A&ab_channel=CafeMusicBGMchannel";
-  const alternative =
-    "https://www.youtube.com/watch?v=5X18D-EbjUc&ab_channel=frequenzy";
-  const tropical =
-    "https://www.youtube.com/watch?v=SIt21jdTYKk&ab_channel=BallisticLive";
+  const cuba =
+    "https://www.youtube.com/watch?v=udfSJ1wj1YE&ab_channel=TOOSTMUSIC-BestWorldMusic";
   const rain =
-    "https://www.youtube.com/watch?v=R0NME9W3cR4&t=80s&ab_channel=NatureSFX";
+    "https://www.youtube.com/watch?v=nR-Zen2s2Qw&ab_channel=Nemo%27sDreamscapes";
   const ocean =
-    "https://www.youtube.com/watch?v=vPhg6sc1Mk4&ab_channel=NaturalezaViva-SonidosyPaisajesIncre%C3%ADbles";
+    "https://www.youtube.com/watch?v=V3h2twITdLQ&ab_channel=NaturalezaViva-SonidosyPaisajesIncre%C3%ADbles";
   const river =
-    "https://www.youtube.com/watch?v=IvjMgVS6kng&t=8s&ab_channel=TheSilentWatcher";
+    "https://www.youtube.com/watch?v=l6J0ylYTO4s&ab_channel=OCBRelaxMusic";
   const hits =
     "https://www.youtube.com/watch?v=19hKXI1ENrY&ab_channel=TheGoodLifeRadioxSensualMusique";
   const oriental =
-    "https://www.youtube.com/watch?v=DAbHQzGiDMo&ab_channel=CafeDeAnatoliaLOUNGE";
+    "https://www.youtube.com/watch?v=JpUIJg2z9YU&ab_channel=CafeDeAnatolia";
   return (
     <Nav>
       <NavMenu>
@@ -69,16 +68,17 @@ function Header() {
         >
           <span>Hits</span>
         </a>
+
         <a
           onClick={() => {
             dispatch({
               type: "ADD_TO_BASKET",
-              item: tropical,
-              anime: "/images/giphy.gif",
+              item: oriental,
+              anime: "/images/oriental.gif",
             });
           }}
         >
-          <span>Tropical</span>
+          <span>Anatolia</span>
         </a>
         <a
           onClick={() => {
@@ -91,17 +91,7 @@ function Header() {
         >
           <span>Rock</span>
         </a>
-        <a
-          onClick={() => {
-            dispatch({
-              type: "ADD_TO_BASKET",
-              item: alternative,
-              anime: "/images/rock.gif",
-            });
-          }}
-        >
-          <span>Alternative</span>
-        </a>
+
         <a
           onClick={() => {
             dispatch({
@@ -117,14 +107,13 @@ function Header() {
           onClick={() => {
             dispatch({
               type: "ADD_TO_BASKET",
-              item: oriental,
-              anime: "/images/oriental.gif",
+              item: cuba,
+              anime: "/images/cuba.gif",
             });
           }}
         >
-          <span>Oriental</span>
+          <span>Cuba</span>
         </a>
-
         <a
           onClick={() => {
             dispatch({
@@ -201,7 +190,7 @@ function Header() {
             });
           }}
         >
-          <span>River</span>
+          <span>Water</span>
         </a>
       </NavMenu>
     </Nav>
@@ -223,17 +212,11 @@ const Nav = styled.nav`
 `;
 const NavMenu = styled.div`
   cursor: pointer;
-
-  align-items: center;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-flow: wrap;
   height: 100%;
-  justify-content: flex-end;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
   margin-right: auto;
-  margin-left: 25px;
   a {
     display: flex;
     align-items: center;
