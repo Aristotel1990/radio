@@ -5,13 +5,13 @@ import { useStateValue } from "../StateProvider";
 function Header() {
   const [{ basket }, dispatch] = useStateValue();
   const chill =
-    "https://www.youtube.com/watch?v=3x3PK8qdH1w&ab_channel=NonstopMusic";
+    "https://www.youtube.com/watch?v=9UMxZofMNbA&ab_channel=TheGoodLifeRadioxSensualMusique";
   const deep =
     "https://www.youtube.com/watch?v=als7xoyNyoE&ab_channel=Gentleman";
   const rock =
     "https://www.youtube.com/watch?v=ZcjdJ-qvbUM&ab_channel=AlternativeRockMusic90%27s";
   const Reggaeton =
-    "https://www.youtube.com/watch?v=h2ssrWHh4SE&ab_channel=LewisBennett";
+    "https://www.youtube.com/watch?v=NoaQ8X00R0k&ab_channel=MusicBrokers";
   const trans =
     "https://www.youtube.com/watch?v=WYetg3AuLE4&ab_channel=RazNitzanMusic";
   const classic =
@@ -21,7 +21,7 @@ function Header() {
   const jazz =
     "https://www.youtube.com/watch?v=Dx5qFachd3A&ab_channel=CafeMusicBGMchannel";
   const cuba =
-    "https://www.youtube.com/watch?v=udfSJ1wj1YE&ab_channel=TOOSTMUSIC-BestWorldMusic";
+    "https://www.youtube.com/watch?v=xVSuWuMBEuw&ab_channel=TOOSTMUSIC-BestWorldMusic";
   const rain =
     "https://www.youtube.com/watch?v=nR-Zen2s2Qw&ab_channel=Nemo%27sDreamscapes";
   const ocean =
@@ -29,9 +29,9 @@ function Header() {
   const river =
     "https://www.youtube.com/watch?v=l6J0ylYTO4s&ab_channel=OCBRelaxMusic";
   const hits =
-    "https://www.youtube.com/watch?v=19hKXI1ENrY&ab_channel=TheGoodLifeRadioxSensualMusique";
+    "https://www.youtube.com/watch?v=HQtFR3mhzOY&ab_channel=RadioHitsMusic";
   const oriental =
-    "https://www.youtube.com/watch?v=JpUIJg2z9YU&ab_channel=CafeDeAnatolia";
+    "https://www.youtube.com/watch?v=Oq_rc1EI4zA&ab_channel=CafeDeAnatolia";
   return (
     <Nav>
       <NavMenu>
